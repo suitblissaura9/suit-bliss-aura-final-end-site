@@ -1,0 +1,6 @@
+{
+  "name": "Suit Bliss Aura",
+  "description": "Ultra-luxury Indian ethnic and contemporary fashion e-commerce storefront with curated collections, interactive cart, bespoke product showcase, and admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

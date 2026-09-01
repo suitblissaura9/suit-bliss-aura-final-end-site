@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon: #3d0a14;
+  --color-burgundy: #5c1322;
+  --color-wine: #7e1d32;
+  --color-darkbrown: #1a0f12;
+  --color-blush: #faedf0;
+  --color-champagne: #fcf9f5;
+  --color-cream: #fffdfa;
+  --color-ivory: #ffffff;
+  --color-gold: #c89d46;
+  --color-gold-light: #e5c07b;
+  --color-gold-dark: #a1782a;
+  --color-rose: #be185d;
+  --color-taupe: #806b6e;
+  
+  --font-serif-royal: 'Cinzel', Georgia, serif;
+  --font-serif-editorial: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-sans-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--color-champagne);
+  color: var(--color-maroon);
+  font-family: var(--font-sans-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faedf0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c89d46;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5c1322;
+}
+
+/* Text Selection */
+::selection {
+  background-color: #3d0a14;
+  color: #fffdfa;
+}
+
+/* Luxury Typography */
+.font-royal {
+  font-family: 'Cinzel', Georgia, serif;
+  letter-spacing: 0.08em;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Luxury Gold Foil & Shimmer */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #a1782a 0%, #d4af37 40%, #f6e27a 60%, #c89d46 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.maroon-gradient-text {
+  background: linear-gradient(135deg, #3d0a14 0%, #7e1d32 60%, #a82343 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px rgba(200, 157, 70, 0.2);
+}
+
+.luxury-card-shadow {
+  box-shadow: 0 10px 30px -10px rgba(61, 10, 20, 0.08), 0 4px 10px -4px rgba(61, 10, 20, 0.04);
+}
+
+.luxury-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -12px rgba(61, 10, 20, 0.15), 0 0 0 1px rgba(200, 157, 70, 0.3);
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2.5s infinite;
+}
+
+/* Glassmorphism */
+.glass-luxury {
+  background: rgba(255, 253, 250, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 157, 70, 0.15);
+}
+
+.glass-dark {
+  background: rgba(26, 15, 18, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(200, 157, 70, 0.25);
+}
+
+/* Buttons */
+.btn-gold {
+  background: linear-gradient(135deg, #c89d46 0%, #d4af37 50%, #b88d36 100%);
+  color: #1a0f12;
+  font-family: 'Cinzel', Georgia, serif;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(200, 157, 70, 0.3);
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #d4af37 0%, #e5c07b 50%, #c89d46 100%);
+  box-shadow: 0 6px 20px rgba(200, 157, 70, 0.45);
+  transform: translateY(-2px);
+}
+
+.btn-maroon {
+  background: linear-gradient(135deg, #3d0a14 0%, #5c1322 100%);
+  color: #fffdfa;
+  font-family: 'Cinzel', Georgia, serif;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(61, 10, 20, 0.25);
+}
+
+.btn-maroon:hover {
+  background: linear-gradient(135deg, #5c1322 0%, #7e1d32 100%);
+  box-shadow: 0 6px 22px rgba(61, 10, 20, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  color: #3d0a14;
+  border: 1.5px solid #c89d46;
+  font-family: 'Cinzel', Georgia, serif;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+  background: #faedf0;
+  border-color: #3d0a14;
+  transform: translateY(-2px);
+}
+
