@@ -169,7 +169,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
             quantity: 1,
             size: 'M',
             colorName: 'Royal Heritage Maroon',
-            image_url: 'https://images.unsplash.com/photo-1553881081-e282b6ca5e3c?w=800&h=1000&fit=crop'
+            image_url: 'https://images.unsplash.com/photo-1600091166971-7f9faad6c1e2?w=800&h=1000&fit=crop'
           }
         ],
         razorpay_order_id: 'order_live_99281',
@@ -272,7 +272,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
           craft: p.craft || 'Handloom Kadwa Weave',
           color: p.color || '#3d0a14',
           colorName: p.colorName || 'Royal Heritage Maroon',
-          image_url: p.image_url || 'https://images.unsplash.com/photo-1553881081-e282b6ca5e3c?w=800&h=1000&fit=crop',
+          image_url: p.image_url || 'https://images.unsplash.com/photo-1600091166971-7f9faad6c1e2?w=800&h=1000&fit=crop',
           gallery: p.gallery || [p.image_url],
           badge: p.badge || 'BEST SELLER',
           rating: Number(p.rating) || 4.9,

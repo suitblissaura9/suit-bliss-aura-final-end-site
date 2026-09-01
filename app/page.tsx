@@ -95,7 +95,7 @@ export default function HomePage() {
       ctaText: 'Explore Kalidar Anarkalis',
       category: 'Anarkali',
       bgGradient: 'from-[#0b1c15] via-[#143326] to-[#1f4837]',
-      imgUrl: 'https://images.unsplash.com/photo-1578932750294-708f5fa0ab1a?w=900&auto=format&fit=crop&q=80',
+      imgUrl: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=900&auto=format&fit=crop&q=80',
       price: '₹9,499',
       originalPrice: '₹21,999'
     },
@@ -108,7 +108,7 @@ export default function HomePage() {
       ctaText: 'Explore Shararas',
       category: 'Shararas',
       bgGradient: 'from-[#2b1206] via-[#4a220b] to-[#6d3412]',
-      imgUrl: 'https://images.unsplash.com/photo-1539537159408-64c156a90c60?w=900&auto=format&fit=crop&q=80',
+      imgUrl: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=900&auto=format&fit=crop&q=80',
       price: '₹7,999',
       originalPrice: '₹16,999'
     }
@@ -169,8 +169,8 @@ export default function HomePage() {
 
   const categoryImages: Record<string, string> = {
     Suits: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&auto=format&fit=crop&q=80',
-    Anarkali: 'https://images.unsplash.com/photo-1578932750294-708f5fa0ab1a?w=600&auto=format&fit=crop&q=80',
-    Shararas: 'https://images.unsplash.com/photo-1539537159408-64c156a90c60?w=600&auto=format&fit=crop&q=80',
+    Anarkali: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&auto=format&fit=crop&q=80',
+    Shararas: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=600&auto=format&fit=crop&q=80',
     Kurtas: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=600&auto=format&fit=crop&q=80',
     'Co-ord Sets': 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&auto=format&fit=crop&q=80',
     Sarees: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&auto=format&fit=crop&q=80',
